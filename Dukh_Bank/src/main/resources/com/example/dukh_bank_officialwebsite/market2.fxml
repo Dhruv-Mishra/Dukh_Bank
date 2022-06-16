@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="1323.0" style="-fx-background-color: #E3D9E5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dukh_bank_officialwebsite.DashboardController">
+   <children>
+      <AnchorPane fx:id="mainPane" layoutX="294.0" layoutY="-8.0" prefHeight="703.0" prefWidth="1027.0" style="-fx-background-color: #E3D9E5;">
+         <children>
+            <AnchorPane layoutY="8.0" prefHeight="49.0" prefWidth="1031.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="18.0" prefHeight="29.0" prefWidth="65.0" text="Time : " textFill="#878787">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="79.0" layoutY="18.0" prefHeight="29.0" prefWidth="77.0" text="English" textFill="#878787" underline="true">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Account_Holder" alignment="CENTER" layoutX="792.0" layoutY="2.0" prefHeight="62.0" prefWidth="170.0" textAlignment="CENTER" textFill="#878787" wrapText="true">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="exitButton" fitHeight="50.0" fitWidth="55.0" layoutX="962.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../java/com/example/dukh_bank_officialwebsite/exitButton.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Account_Image" fitHeight="50.0" fitWidth="55.0" layoutX="751.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Dhruv/IdeaProjects/Dukh_Bank_OfficialWebsite/src/main/resources/com/example/img/ic_cart.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="21.0" layoutY="212.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="991.0" style="-fx-background-radius: 10; -fx-background-color: #dbcbe5;">
+               <children>
+                  <ScrollPane fx:id="scroll" layoutX="16.0" layoutY="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="969.0" style="-fx-background: #dbcbe5; -fx-background-radius: 30;" stylesheets="@values/style.css">
+                     <content>
+                        <GridPane fx:id="grid" prefHeight="465.0" prefWidth="1026.0" style="-fx-background-radius: 10; -fx-background-color: #dbcbe5;">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="24.0" layoutY="81.0" prefHeight="110.0" prefWidth="991.0" style="-fx-background-color: #dbcbe5; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="22.0" layoutY="14.0" style="-fx-font-family: Prompt; -fx-font-style: normal; -fx-font-weight: 500; -fx-font-size: 20px; -fx-underline: 30px;" text="Current Balance:" textFill="#935eb6" />
+                  <ImageView fx:id="rupeeSymbol" fitHeight="40.0" fitWidth="41.0" layoutX="22.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../java/com/example/dukh_bank_officialwebsite/rupeeSymbol.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="balanceDisplay" layoutX="54.0" layoutY="37.0" prefHeight="58.0" prefWidth="375.0" style="-fx-font-family: Roboto; -fx-font-style: normal; -fx-font-weight: 500; -fx-font-size: 40px; -fx-underline: 53px;" text="00.00" textFill="#09021e" />
+                  <ImageView fx:id="newLoanButton" fitHeight="58.0" fitWidth="200.0" layoutX="780.0" layoutY="47.0" onMouseClicked="#make_loan_animation" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="newFDButton" fitHeight="58.0" fitWidth="200.0" layoutX="780.0" layoutY="47.0" onMouseClicked="#make_fd_animation" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="newTransactionButton" fitHeight="58.0" fitWidth="200.0" layoutX="780.0" layoutY="47.0" onMouseClicked="#make_transaction" pickOnBounds="true" preserveRatio="true" />
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="optionsPane" layoutX="-16.0" layoutY="-3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="310.0" style="-fx-background-color: #dbcbe5; -fx-background-radius: 30;">
+         <children>
+            <AnchorPane layoutX="19.0" layoutY="14.0" prefHeight="65.0" prefWidth="287.0" style="-fx-background-color: rgb(120,62,253,0.43); -fx-background-radius: 40;">
+               <children>
+                  <Label layoutX="14.0" layoutY="8.0" prefHeight="49.0" prefWidth="140.0" text="D.U.K.H" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="161.0" layoutY="8.0" prefHeight="49.0" prefWidth="102.0" text="BANK" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="myProfile" fitHeight="58.0" fitWidth="225.0" layoutX="37.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/dukh_bank_officialwebsite/transactions.png" />
+               </image></ImageView>
+            <ImageView fx:id="transactions" fitHeight="49.0" fitWidth="236.0" layoutX="37.0" layoutY="391.0" onMouseClicked="#load_transactions" onMouseEntered="#selectT" onMouseExited="#deselectT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/dukh_bank_officialwebsite/transactions.png" />
+               </image></ImageView>
+            <ImageView fx:id="fixedDeposits" fitHeight="50.0" fitWidth="249.0" layoutX="38.0" layoutY="300.0" onMouseClicked="#load_fds" onMouseEntered="#selectFD" onMouseExited="#deselectFD" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/dukh_bank_officialwebsite/fds1.png" />
+               </image></ImageView>
+            <ImageView fx:id="loans" fitHeight="34.0" fitWidth="154.0" layoutX="37.0" layoutY="468.0" onMouseClicked="#load_loans" onMouseEntered="#selectL" onMouseExited="#deselectL" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/dukh_bank_officialwebsite/loans1.png" />
+               </image></ImageView>
+            <ImageView fx:id="cards" fitHeight="40.0" fitWidth="135.0" layoutX="37.0" layoutY="555.0" onMouseEntered="#selectC" onMouseExited="#deselectC" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/dukh_bank_officialwebsite/cards1.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <Group fx:id="newTransaction" layoutX="381.0" layoutY="722.0">
+         <children>
+            <AnchorPane layoutX="6.0" layoutY="-2.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: &quot;green&quot;; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="18.0" layoutY="18.0" text="Receiver's Account Number: " />
+                  <Label layoutX="18.0" layoutY="65.0" text="Enter Amount: " />
+                  <TextField fx:id="transactionAmount" layoutX="126.0" layoutY="60.0" promptText="Amount" />
+                  <TextField fx:id="receiverAccountNumber" layoutX="219.0" layoutY="13.0" promptText="Account Number" />
+                  <Label fx:id="transactionStatus" layoutX="505.0" layoutY="157.0" prefHeight="21.0" prefWidth="102.0" />
+                  <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="586.0" layoutY="-2.0" onMouseClicked="#closenewTransaction" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="58.0" fitWidth="225.0" layoutX="18.0" layoutY="128.0" onMouseClicked="#check_transaction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Dhruv/IdeaProjects/Dukh_Bank_OfficialWebsite/src/main/java/com/example/dukh_bank_officialwebsite/sendMoney.png" />
+                     </image></ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </Group>
+      <Group fx:id="newLoan" layoutX="618.0" layoutY="924.0">
+         <children>
+            <AnchorPane layoutX="-216.0" layoutY="12.0" prefHeight="227.0" prefWidth="627.0" style="-fx-background-color: &quot;green&quot;; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="18.0" layoutY="18.0" text="Enter the loan Amount:" />
+                  <Label layoutX="18.0" layoutY="55.0" text="Enter Amount: " />
+                  <TextField fx:id="loanType" layoutX="118.0" layoutY="50.0" promptText="Loan Type" />
+                  <TextField fx:id="loanAmount" layoutX="180.0" layoutY="13.0" promptText="Loan Amount" />
+                  <Label fx:id="loanStatus" layoutX="505.0" layoutY="157.0" prefHeight="21.0" prefWidth="102.0" />
+                  <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="586.0" layoutY="-2.0" onMouseClicked="#closenewLoans" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="58.0" fitWidth="225.0" layoutX="22.0" layoutY="157.0" onMouseClicked="#make_loan" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Dhruv/IdeaProjects/Dukh_Bank_OfficialWebsite/src/main/java/com/example/dukh_bank_officialwebsite/sendMoney.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="loanTenure" layoutX="253.0" layoutY="85.0" promptText="Tenure (in years)" />
+                  <Label layoutX="18.0" layoutY="90.0" text="Enter the Loan Repayment Period:" />
+                  <Label layoutX="22.0" layoutY="127.0" text="Interest Rate: 7.5 % per annum" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Group>
+      <Group fx:id="newFD" layoutX="381.0" layoutY="865.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: &quot;green&quot;; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="18.0" layoutY="18.0" text="Enter the Amount to Deposit:" />
+                  <TextField fx:id="fdAmount" layoutX="220.0" layoutY="13.0" promptText="Amount" />
+                  <Label fx:id="fdStatus" layoutX="505.0" layoutY="157.0" prefHeight="21.0" prefWidth="102.0" />
+                  <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="586.0" layoutY="-2.0" onMouseClicked="#closenewFD" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="58.0" fitWidth="225.0" layoutX="18.0" layoutY="128.0" onMouseClicked="#make_fd" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Dhruv/IdeaProjects/Dukh_Bank_OfficialWebsite/src/main/java/com/example/dukh_bank_officialwebsite/sendMoney.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="fdTenure" layoutX="246.0" layoutY="59.0" promptText="Tenure (in years)" />
+                  <Label layoutX="14.0" layoutY="64.0" text="Enter the tenure to deposit for:" />
+                  <Label layoutX="14.0" layoutY="100.0" text="Interest Rate: 6 % per annum" />
+               </children>
+            </AnchorPane>
+         </children></Group>
+   </children>
+</AnchorPane>

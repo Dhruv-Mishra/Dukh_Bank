@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="338.0" prefWidth="343.0" style="-fx-background-color: #d8bce4#d8bce4; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dukh_bank_officialwebsite.CCcontroller">
+   <children>
+      <ImageView fx:id="skeleton" fitHeight="266.0" fitWidth="374.0" layoutX="-8.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../java/com/example/dukh_bank_officialwebsite/card/skeleton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="network" fitHeight="30.0" fitWidth="58.0" layoutX="251.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../java/com/example/dukh_bank_officialwebsite/card/rupay.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="cardNumber" layoutX="64.0" layoutY="133.0" prefHeight="30.0" prefWidth="210.0" text="4102 1110 2010 4555" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="validTill" layoutX="202.0" layoutY="168.0" text="27/07" textFill="WHITE" />
+      <Label fx:id="holderName" layoutX="64.0" layoutY="168.0" text="Dhruv Mishra " textFill="WHITE" />
+      <ImageView fx:id="logo" fitHeight="37.0" fitWidth="112.0" layoutX="259.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../java/com/example/dukh_bank_officialwebsite/card/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="41.0" layoutY="227.0" text="CVV">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="257.0" text="Remaining Limit">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="cvv" layoutX="242.0" layoutY="227.0" text="669" />
+      <Label fx:id="limit" layoutX="234.0" layoutY="257.0" text="50,000" />
+   </children>
+</AnchorPane>

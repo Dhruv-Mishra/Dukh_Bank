@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="338.0" prefWidth="315.0" style="-fx-background-color: #d8bce4#d8bce4; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dukh_bank_officialwebsite.Fdcontroller">
+   <children>
+      <Label fx:id="fd_no" layoutX="14.0" layoutY="14.0" text="FD Number: " />
+      <Label fx:id="principalamount" layoutX="14.0" layoutY="54.0" text="Label" />
+      <Label fx:id="currentamount" layoutX="14.0" layoutY="90.0" text="Label" />
+      <Label fx:id="interestrate" layoutX="14.0" layoutY="132.0" text="Label" />
+      <Label fx:id="dateofopenening" layoutX="14.0" layoutY="169.0" text="Label" />
+      <Label fx:id="maturationperiod" layoutX="14.0" layoutY="214.0" text="Label" />
+   </children>
+</AnchorPane>
