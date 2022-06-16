@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="338.0" prefWidth="315.0" style="-fx-background-color: #d8bce4#d8bce4; -fx-background-radius: 30; -fx-border-color: &quot;blue&quot;; -fx-border-width: 4; -fx-border-radius: 30;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dukh_bank_officialwebsite.LoanController">
+   <children>
+      <Label fx:id="amount" layoutX="14.0" layoutY="14.0" style="-fx-font-family: 'Prompt'; -fx-font-style: normal; -fx-font-weight: 300;" text="loan_id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="dateofsanction" layoutX="14.0" layoutY="54.0" style="-fx-font-family: 'Prompt'; -fx-font-style: normal; -fx-font-weight: 300;" text="Label" />
+      <Label fx:id="loantype" layoutX="14.0" layoutY="90.0" style="-fx-font-family: 'Prompt'; -fx-font-style: normal; -fx-font-weight: 300;" text="Label" />
+      <Label fx:id="interestrate" layoutX="14.0" layoutY="132.0" style="-fx-font-family: 'Prompt'; -fx-font-style: normal; -fx-font-weight: 300;" text="Label" />
+      <Label fx:id="nextdueamount" layoutX="14.0" layoutY="169.0" style="-fx-font-family: 'Prompt'; -fx-font-style: normal; -fx-font-weight: 300;" text="Label" />
+      <Label fx:id="nextpaymentdate" layoutX="14.0" layoutY="200.0" style="-fx-font-family: 'Prompt'; -fx-font-style: normal; -fx-font-weight: 300;" text="Label" />
+      <Label fx:id="tenure" layoutX="14.0" layoutY="231.0" style="-fx-font-family: 'Prompt'; -fx-font-style: normal; -fx-font-weight: 300;" text="Label" />
+      <Label fx:id="amountpaid" layoutX="14.0" layoutY="266.0" style="-fx-font-family: 'Prompt'; -fx-font-style: normal; -fx-font-weight: 300;" text="Label" />
+   </children>
+</AnchorPane>
